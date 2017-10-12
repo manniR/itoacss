@@ -1,0 +1,39 @@
+$button-padding : $baseline-x2 $baseline-x3;
+$button-bgcolor : $color-white;
+$button-bgcolor-hover : darken($color-white, 22%);
+$button-color : $color-black;
+$button-radius : 3px;
+
+$button-outline-padding: ( $baseline-x2 - 2 ) ( $baseline-x3 -2 );
+$button-ouline-color: transparent;
+$button-outline-color : $color-black;
+$button-outline-color-hover : lighten($color-black, 22%);
+$button-outline-bgcolor : $color-white;
+
+.c-button{
+  padding: $button-padding;
+  display: inline-block;
+  font: inherit;
+  color: $button-color;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  background-color: $button-bgcolor;
+  border-radius: $button-radius;
+
+  &:hover {  background-color: $button-bgcolor-hover;  }
+  &--outline {
+    padding: $button-outline-padding;
+    color: $button-outline-color;
+    border: 1px solid $button-outline-color;
+    background-color: $button-outline-bgcolor;
+    &:hover{
+      color: #990055;
+      border-color: $button-outline-color-hover;
+      background-color: $button-outline-bgcolor;
+    }
+  }
+}

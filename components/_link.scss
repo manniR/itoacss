@@ -1,0 +1,12 @@
+.c-link{
+  color: inherit;
+  text-decoration: none;
+  &:hover{
+    color: lighten($color-black, 22%);
+  }
+  &--disabled{
+    color: lighten($color-black, 55%);
+    pointer-events: none !important;
+    cursor: default;
+  }
+}
